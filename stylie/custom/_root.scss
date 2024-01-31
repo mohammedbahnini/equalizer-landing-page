@@ -13,7 +13,7 @@ body {
         top: calc(-112px - 150px);
         z-index: -10;
         @include mq($tablet-breakpoint){
-            background-image: url('../../assets/bg-main-tablet.png');
+            background-image: url('../assets/bg-main-tablet.png');
             width: 983px;
             height: 808px;
             left: -254px;
@@ -21,7 +21,7 @@ body {
             background-size: 100%;
         }
         @include mq($mobile-breakpoint){
-            background-image: url('../../assets/bg-main-mobile.png');
+            background-image: url('../assets/bg-main-mobile.png');
             width: 216px;
             height: 480px;
             left: unset;

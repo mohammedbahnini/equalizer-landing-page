@@ -14,7 +14,7 @@ body {
     z-index: -10; }
     @media (max-width: 992px) {
       body::before {
-        background-image: url("../../assets/bg-main-tablet.png");
+        background-image: url("../assets/bg-main-tablet.png");
         width: 983px;
         height: 808px;
         left: -254px;
@@ -22,7 +22,7 @@ body {
         background-size: 100%; } }
     @media (max-width: 576px) {
       body::before {
-        background-image: url("../../assets/bg-main-mobile.png");
+        background-image: url("../assets/bg-main-mobile.png");
         width: 216px;
         height: 480px;
         left: unset;
@@ -40,7 +40,7 @@ header .container {
     display: block;
     top: -40px;
     right: -141px;
-    background: url("../../assets/bg-pattern-1.svg") no-repeat center/cover; }
+    background: url("../assets/bg-pattern-1.svg") no-repeat center/cover; }
     @media (max-width: 992px) {
       header .container::after {
         width: 267px;
@@ -60,7 +60,7 @@ header .container {
 
 .section-1 .content {
   position: relative;
-  background-image: url("../../assets/bg-pattern-2.svg");
+  background-image: url("../assets/bg-pattern-2.svg");
   background-repeat: no-repeat;
   background-position: 336px -40px; }
   @media (max-width: 992px) {
