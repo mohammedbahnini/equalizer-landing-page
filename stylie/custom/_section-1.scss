@@ -1,0 +1,17 @@
+.section-1{
+    .content{
+        position: relative;
+        background-image: url('../../assets/bg-pattern-2.svg');
+        background-repeat: no-repeat;
+        background-position: 336px -40px;
+        @include mq( $tablet-breakpoint ){
+            background-size: 280px 420px ;
+            background-position: 229px -31px;
+        }
+        @include mq( $mobile-breakpoint ){
+            background-position: center -0;
+        }
+    }
+    
+
+}

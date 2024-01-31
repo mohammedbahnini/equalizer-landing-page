@@ -1,0 +1,82 @@
+* , *::after , *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    
+}
+
+body {
+    font-family: $font-familly-base ;
+    min-height: 100vh;
+    line-height: 1.5em;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+ul , ol {
+    list-style: none;
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+h1 , 
+h2 , 
+h3 , 
+h4 , 
+h5 , 
+h6 {
+    line-height: 1.1em;
+}
+
+
+.container{
+    max-width: calc( 69.375rem + ( #{$container-padding} * 2) );
+    padding: 0 $container-padding ;
+    margin: 0 auto ;
+}
+
+/*  custom css  */
+/* headings & text */
+.heading-1{
+    font-size: 5.5rem;
+    line-height: 1em;
+    letter-spacing: -1px;
+    @include mq($tablet-breakpoint){
+        font-size: 4rem;
+    }
+    @include mq($mobile-breakpoint){
+        font-size: 2.5rem;
+    }
+}
+.heading-2{
+    font-size: 2.5rem;
+    line-height: 1.3em;
+    @include mq($tablet-breakpoint){
+        font-size: 2rem;
+        line-height: 1.25em;
+    }
+}
+.text-1{
+    font-size: 1.25rem;
+    line-height: 1.7em;
+    @include mq( $tablet-breakpoint ){
+        font-size: 1.125em;
+        line-height: 1.555em;
+    }
+    @include mq( $mobile-breakpoint ){
+        font-size: 1rem;
+        line-height: 1.625em;
+    }
+}
+.text-2{
+    font-size: 1rem;
+    line-height: 1.625em;
+}

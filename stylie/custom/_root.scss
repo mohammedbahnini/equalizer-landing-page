@@ -1,0 +1,33 @@
+body {
+    position: relative;
+    &::before{
+        content: '' ;
+        display: block;
+        width: 1913px;
+        height: 2058px;
+        background-image: url('../../assets/bg-main-desktop.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: calc(50% - 866px - 150px);
+        top: calc(-112px - 150px);
+        z-index: -10;
+        @include mq($tablet-breakpoint){
+            background-image: url('../../assets/bg-main-tablet.png');
+            width: 983px;
+            height: 808px;
+            left: -254px;
+            top: -112px;
+            background-size: 100%;
+        }
+        @include mq($mobile-breakpoint){
+            background-image: url('../../assets/bg-main-mobile.png');
+            width: 216px;
+            height: 480px;
+            left: unset;
+            top: -104px;
+            right: 0;
+            background-size: 281px  480px;
+        }
+    }
+}
